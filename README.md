@@ -25,4 +25,5 @@ A. 저희는 무인 점포를 위주로 생각하며 제품을 개발했습니�
 LED가 켜지며 필요한 빛을  확보한 뒤에 동작을 이어서 진행하겠습니다
 
 
+
 https://github.com/user-attachments/assets/86fa550f-c398-447a-868d-7e585f6c428a
