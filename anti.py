@@ -4,12 +4,13 @@ import spidev
 import RPi.GPIO as GPIO
 import time
 from twilio.rest import Client  # Twilio 라이브러리 추가
+print(Clinet)
 
 # Twilio 설정
-TWILIO_ACCOUNT_SID = 'your_account_sid'  # Twilio 계정 SID
-TWILIO_AUTH_TOKEN = 'your_auth_token'    # Twilio 인증 토큰
-TWILIO_PHONE_NUMBER = '+1234567890'      # Twilio 발신 번호
-TARGET_PHONE_NUMBER = '+0987654321'      # 수신자 번호
+TWILIO_ACCOUNT_SID = '사용자의 Twilio 계정 SID 입력'  # Twilio 계정 SID
+TWILIO_AUTH_TOKEN = '사용자의 Twilio 인증 토큰 입력'    # Twilio 인증 토큰
+TWILIO_PHONE_NUMBER = '사용자의 Twilio 발신 번호 입력'      # Twilio 발신 번호
+TARGET_PHONE_NUMBER = '수신자 번호 입력'      # 수신자 번호
 
 # Twilio 클라이언트 초기화
 twilio_client = Client(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN)
@@ -69,8 +70,8 @@ def main():
     previous_detected_classes = set()
     try:
         model = cv2.dnn.readNetFromTensorflow(
-            '/home/minje/opencv/OpencvDnn/models/frozen_inference_graph.pb',
-            '/home/minje/opencv/OpencvDnn/models/ssd_mobilenet_v2_coco_2018_03_29.pbtxt'
+            '/home/heejong/opencv/OpencvDnn/models/frozen_inference_graph.pb',
+            '/home/heejong/opencv/OpencvDnn/models/ssd_mobilenet_v2_coco_2018_03_29.pbtxt'
         )
 
         object_detected = False
